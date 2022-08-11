@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(249, 251, 252);
+}
+
+p {
+    margin: 0;
+}
+
+.wrapper {
+    width: 600px;
+}
+
+.button {
+    width: 200px;
+    padding: 15px;
+    font-size: 22px;
+    font-family: inherit;
+    background-color: rgb(223, 250, 215);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.button:hover {
+    background-color: rgb(255, 224, 183);
+    margin-left: 5px;
+    transition-duration: 1s;
+}
+
+.button:focus {
+    background-color: rgb(255, 183, 183);
+    margin-left: 5px;
+    border: 2px solid red;
+    transition: border 0s, background-color 1s, margin-left 1s;
+}
+
+.box {
+    overflow: hidden;
+}
+
+.button_message {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: red;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    cursor: pointer;
+    transition-duration: 200ms;
+    animation: 2s load alternate-reverse infinite;
+}
+
+.button_message_transform {
+    transition-duration: 100ms;
+    transform: scale(0.7,0.7);
+}
+
+@keyframes load {
+    to {
+        background-color: gold;
+    }
+}
+
+.button_message:hover {
+    background-color: rgb(28, 210, 255);
+    bottom: 95px;
+    right: 95px;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    animation: none;
+}
+
+.wrapper__form {
+    position: absolute;
+    box-sizing: border-box;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    transition-duration: 500ms;
+}
+
+.wrapper__form_transform {
+    transition-duration: 500ms;
+    transform: scale(0.7,0.7);
+}
+
+.box__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button_close {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 12px;
+    font-family: inherit;
+    background-color: rgb(255, 187, 187);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+.button_close:hover {
+    background-color: rgb(253, 94, 94);
+}
+
+.textarea {
+    resize: none;
+    width: 98%;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.button_send {
+    width: 130px;
+    padding: 15px;
+    margin-top: 13px;
+    font-size: 18px;
+    font-family: inherit;
+    background-color: rgb(187, 255, 190);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+.button_send:hover {
+    background-color: rgb(243, 255, 139);
+}
+
+.hidden {
+    display: none;
+}
+
